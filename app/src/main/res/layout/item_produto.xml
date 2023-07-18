@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="187dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="165dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="0.5"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imagemProduto"
+                android:layout_width="114dp"
+                android:layout_height="134dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="16dp"
+                android:foregroundGravity="center" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/descricao"
+                android:layout_width="177dp"
+                android:layout_height="wrap_content"
+                android:text="Tomates"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/descricaoTexto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/descricao"
+                android:layout_marginTop="7dp"
+                android:text="Tomate bem cultivado com aguas de pedra e adubado com muitas condiçoes"
+                android:textColor="@color/black"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/preco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/descricaoTexto"
+                android:layout_marginTop="6dp"
+                android:text="150$00"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/addCarinho"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_below="@+id/preco"
+                android:layout_marginTop="10dp"
+                android:drawableTint="@android:color/darker_gray"
+                android:text="Adicionar"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/addFavorito"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_below="@+id/preco"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="7dp"
+                android:layout_toEndOf="@+id/addCarinho"
+                android:src="@drawable/icon_favorite_border" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/divisor"
+        android:layout_height="20dp" />
+
+</LinearLayout>
